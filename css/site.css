@@ -318,3 +318,14 @@ a.info-card:hover { border-color: var(--blue); }
 .svc .offroad-note { color: #c9cdd2; }
 @media (max-width: 640px) { .btn-row .btn-ghost { flex: 1 1 calc(50% - 6px); } }
 .svc-alt { margin: -.3em 0 1em; color: var(--blue-hi); font-weight: 700; font-size: .9rem; letter-spacing: .04em; text-transform: uppercase; }
+
+/* Payment Assist band (approved wording, chhota sa) */
+.pay-band { border-block: 1px solid var(--line); background: linear-gradient(90deg, rgba(47,125,225,.10), transparent 70%); }
+.pay-inner { display: flex; align-items: center; gap: 18px; padding: 26px 0; flex-wrap: wrap; }
+.pay-icon { width: 48px; height: 48px; flex: none; display: grid; place-items: center; border-radius: 12px; border: 1px solid var(--line); color: #5aa2ff; }
+.pay-icon .i { width: 26px; height: 26px; }
+.pay-inner > div { flex: 1 1 320px; }
+.pay-head { margin: 0 0 4px; font-weight: 700; font-size: 1.15rem; }
+.pay-small { margin: 0; font-size: .82rem; opacity: .72; }
+.pay-ask { margin: 0; font-weight: 600; font-size: .92rem; color: #5aa2ff; }
+.pay-icon .i { fill: none !important; stroke: currentColor; }
