@@ -329,3 +329,8 @@ a.info-card:hover { border-color: var(--blue); }
 .pay-small { margin: 0; font-size: .82rem; opacity: .72; }
 .pay-ask { margin: 0; font-weight: 600; font-size: .92rem; color: #5aa2ff; }
 .pay-icon .i { fill: none !important; stroke: currentColor; }
+/* client ki asli photos portrait hain */
+.gallery { grid-template-columns: repeat(4, 1fr); }
+.gallery figure { aspect-ratio: 3 / 4; }
+@media (max-width: 640px) { .gallery { grid-template-columns: 1fr 1fr; } }
+.car-img img, .svc-img img, .split-img img { object-position: center 45%; }
