@@ -354,3 +354,12 @@ a.info-card:hover { border-color: var(--blue); }
 .pa-faq summary { cursor: pointer; font-weight: 700; }
 .pa-faq p { margin: 8px 0 0; }
 @media (max-width: 760px) { .pa-grid { grid-template-columns: 1fr; gap: 8px; } .pa-logo { width: 190px; } .pa-headline, .pa-disclosure, .pay-small { font-size: 1.05rem !important; } }
+/* Pay in 4 ka simple breakdown */
+.pa-pay4 { margin: 0 0 36px; padding: 24px; border: 1px solid var(--line); border-radius: 14px; background: rgba(90,162,255,.06); }
+.pa-pay4 h3 { margin-top: 0; }
+.pa-pay4-steps { list-style: none; padding: 0; margin: 16px 0 0; display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; }
+.pa-pay4-steps li { display: flex; flex-direction: column; gap: 2px; padding: 14px; border-radius: 10px; border: 1px solid var(--line); text-align: center; }
+.pa-pay4-steps strong { font-size: 1.5rem; color: #5aa2ff; }
+.pa-pay4-steps span { font-weight: 700; }
+.pa-pay4-steps em { font-style: normal; font-size: .85rem; opacity: .75; }
+@media (max-width: 640px) { .pa-pay4-steps { grid-template-columns: 1fr 1fr; } }
