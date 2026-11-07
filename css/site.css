@@ -224,7 +224,7 @@ p { margin: 0 0 1em; }
 .info-card { background: var(--panel); border: 1px solid var(--line); border-radius: var(--radius); padding: 22px; transition: border-color .2s; }
 a.info-card:hover { border-color: var(--blue); }
 .info-card .i { width: 30px; height: 30px; color: var(--blue-hi); margin-bottom: 10px; }
-.info-card h3 { margin-bottom: .2em; }
+.info-card h2 { font-size: 1.1rem; margin-bottom: .2em; }
 .info-card p { color: var(--muted); margin: 0; word-break: break-word; }
 .contact-split { align-items: start; }
 .contact-form { background: var(--panel); border: 1px solid var(--line); border-radius: var(--radius); padding: 28px; }
@@ -372,3 +372,6 @@ a.info-card:hover { border-color: var(--blue); }
 .review-card figcaption { margin-top: auto; display: flex; flex-direction: column; }
 .review-card figcaption span { color: var(--muted); font-size: .88rem; }
 @media (max-width: 760px) { .review-grid { grid-template-columns: 1fr; } }
+
+/* page speed: below-fold sections ka layout/paint tab tak skip jab tak screen ke paas na aayein */
+.section, .pa-section, .cta-band { content-visibility: auto; contain-intrinsic-size: auto 640px; }
